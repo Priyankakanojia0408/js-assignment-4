@@ -15,5 +15,19 @@ function guessNumberGame() {
 
   alert("🎉 Correct! The number was " + secret);
 }
-console.log("Welcome to JS Exercises!");
-console.log("--------------------------");
+    console.log("Welcome to JS Exercises!");
+    console.log("--------------------------");
+    guessNumberGame();
+
+// ========== EXERCISE 2 ==========
+// Generate an array of random numbers
+function generateRandomArray(length) {
+  let numbers = [];
+  for (let i = 0; i < length; i++) {
+    numbers.push(Math.floor(Math.random() * 100) + 1);
+  }
+  return numbers;
+}
+// 2️⃣ Generate random array and print
+    const myArray = generateRandomArray(10);
+    console.log("Generated Array:", myArray);
