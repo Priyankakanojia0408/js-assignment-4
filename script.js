@@ -31,3 +31,19 @@ function generateRandomArray(length) {
 // 2️⃣ Generate random array and print
     const myArray = generateRandomArray(10);
     console.log("Generated Array:", myArray);
+
+
+// ========== EXERCISE 3 ==========
+// Calculate the sum of even numbers in the array
+function sumEvenNumbers(arr) {
+  let sum = 0;
+  for (let i = 0; i < arr.length; i++) {
+    if (arr[i] % 2 === 0) {
+      sum += arr[i];
+    }
+  }
+  return sum;
+}
+ //Calculate and print the sum of even numbers
+const evenSum = sumEvenNumbers(myArray);
+console.log("Sum of even numbers:", evenSum);
